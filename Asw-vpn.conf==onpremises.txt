@@ -1,0 +1,19 @@
+conn tunnell
+        authby=secret
+        auto=start
+        left=%defaultroute
+        leftid=54.198.105.162
+        right=34.200.162.128
+        type=tunnel
+        ikelifetime=8h
+        keylife=1h
+        phase2alg=aes128-sha1;modp1024
+        ike=ase128-sha1;mod1024
+        keyingtries=%forever
+        keyexchange=ike
+        leftsubnet=10.200.0.0/16
+        rightsubnet=10.100.0.0/16
+        dpddelay=10
+        dptimeout=30
+        dpdaction=restart_by_peer
+        
